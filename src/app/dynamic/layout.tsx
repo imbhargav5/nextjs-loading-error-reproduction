@@ -11,6 +11,7 @@ const fakeWait = (ms: number) => {
 export default async function Layout({children}: {
     children: ReactNode
 }){
+    // This should only be run dynamically as this layout is dynamic
     await fakeWait(1000);
     return <>{children}</>
 }
